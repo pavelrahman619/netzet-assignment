@@ -10,7 +10,12 @@ export default function Home() {
       <div className="w-full bg-gradient-to-r from-[#ff0b7b] via-[#ff2f69] to-[#00c4ff] text-white text-center text-[13px] sm:text-sm font-semibold tracking-tight py-3 px-4 leading-snug">
         <span role="img" aria-label="rocket" className="mr-1">🚀</span>
         <span className="uppercase" style={{ color: '#00E7F9' }}>Fresh Beginnings Sale:</span>
-        <span className="font-normal ml-1">Extra 25% OFF, <br /> Limited Spots - start your journey today!</span>
+        <span className="font-normal ml-1">
+          Extra 25% OFF,
+          <span className="inline sm:hidden"><br /></span>
+          <span className="hidden sm:inline"> </span>
+          Limited Spots - start your journey today!
+        </span>
       </div>
 
       {/* Header & Hero Wrapper */}
