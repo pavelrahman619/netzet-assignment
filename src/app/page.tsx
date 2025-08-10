@@ -71,7 +71,7 @@ export default function Home() {
             Want to Turn Social Media Into a Profitable Career?
             </h1>
             <h2
-              className="text-[30px] sm:text-[38px] md:text-[42px] font-extrabold leading-snug tracking-tight mb-8 text-center"
+              className="text-[30px] sm:text-[38px] md:text-[42px] font-extrabold leading-snug tracking-tight mb-8 text-center sm:text-left"
               style={{
                 color: '#00E7F9',
                 textShadow: '0px 4px 4px #FC004E'
