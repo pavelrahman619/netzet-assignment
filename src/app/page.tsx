@@ -48,8 +48,6 @@ export default function Home() {
         {/* Image (mobile top, desktop right) */}
         <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end mb-10 lg:mb-0">
           <div className="relative max-w-[460px] w-full">
-            {/* Glow ring background approximation */}
-            <div className="absolute -top-10 -left-6 right-0 mx-auto w-[140%] aspect-square rounded-full blur-3xl opacity-40 bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-blue-600 pointer-events-none select-none" />
             <Image
               src="/influe.png"
               alt="App preview"
