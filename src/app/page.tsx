@@ -54,19 +54,19 @@ export default function Home() {
               width={900}
               height={900}
               priority
-              className="relative w-full h-auto drop-shadow-[0_0_18px_rgba(0,200,255,0.25)]"
+              className="relative w-full h-auto"
             />
           </div>
         </div>
 
         {/* Text Content */}
         <div className="order-2 lg:order-1 flex flex-col max-w-[690px]">
-          <h1 className="text-[32px] leading-[1.15] sm:text-[40px] md:text-[44px] font-semibold tracking-tight mb-5 pr-4">
+            <h1 className="text-[32px] leading-[1.15] sm:text-[40px] md:text-[44px] font-semibold tracking-tight mb-5 pr-4 text-center sm:text-left">
             Want to Turn Social Media Into a Profitable Career?
-          </h1>
-          <h2 className="text-[30px] sm:text-[38px] md:text-[42px] font-extrabold leading-snug tracking-tight mb-8 bg-gradient-to-r from-cyan-300 via-pink-400 to-fuchsia-600 text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(255,0,180,0.6)]">
+            </h1>
+            <h2 className="text-[30px] sm:text-[38px] md:text-[42px] font-extrabold leading-snug tracking-tight mb-8 bg-gradient-to-r from-cyan-300 via-pink-400 to-fuchsia-600 text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(255,0,180,0.6)] text-center sm:text-left">
             Discover your way to success with Fametonic:
-          </h2>
+            </h2>
           <ul className="space-y-5 text-[17px] sm:text-[18px] leading-relaxed font-medium mb-10">
             <li className="flex gap-3"><span className="text-yellow-300 text-xl leading-none">✨</span><span>Start growing your influence right away—no waiting required!</span></li>
             <li className="flex gap-3"><span className="text-yellow-300 text-xl leading-none">✨</span><span>Create viral TikToks and Reels step by step with easy-to-follow lessons</span></li>
