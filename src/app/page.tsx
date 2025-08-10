@@ -86,12 +86,12 @@ export default function Home() {
             >
               GET STARTED <span className="ml-2 text-[22px]" aria-hidden>›</span>
             </a>
-            <p className="mt-3 text-[11px] sm:text-xs text-center sm:text-left opacity-80">1-minute quiz for personalized Insights</p>
+            <p className="mt-3 text-[12px] sm:text-xs text-center sm:text-left opacity-80">1-minute quiz for personalized Insights</p>
           </div>
-          <p className="mt-12 text-[11px] sm:text-[12px] leading-relaxed text-center sm:text-left opacity-80 px-2 sm:px-0">
+          <p className="mt-12 text-[12px] sm:text-[12px] leading-relaxed text-center sm:text-left opacity-80 px-2 sm:px-0">
             By clicking "Get Started", you agree with Terms and Conditions, Privacy Policy, Subscription Terms
           </p>
-          <p className="mt-6 text-[11px] sm:text-[12px] text-center sm:text-left opacity-70">Fametonic 2025 ©All Rights Reserved.</p>
+          <p className="mt-6 text-[12px] sm:text-[12px] text-center sm:text-left opacity-70">Fametonic 2025 ©All Rights Reserved.</p>
         </div>
       </main>
     </div>
