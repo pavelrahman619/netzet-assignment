@@ -1,103 +1,87 @@
+"use client";
+
 import Image from "next/image";
+import React from "react";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen w-full bg-black text-white font-sans flex flex-col">
+      {/* Top Promo Bar */}
+      <div className="w-full bg-gradient-to-r from-[#ff0b7b] via-[#ff2f69] to-[#00c4ff] text-white text-center text-[13px] sm:text-sm font-semibold tracking-tight py-3 px-4 leading-snug">
+        <span role="img" aria-label="rocket" className="mr-1">🚀</span>
+        <span className="uppercase">Fresh Beginnings Sale:</span>
+        <span className="font-normal ml-1">Extra 25% OFF, Limited Spots - start your journey today!</span>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      {/* Header & Hero Wrapper */}
+      <header className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 pt-6 lg:pt-10 flex items-center justify-between">
+        {/* Logo (text-based approximation) */}
+        <a href="#" className="flex flex-col leading-none select-none">
+          <span className="text-4xl sm:text-[46px] font-extrabold tracking-tight text-white drop-shadow-[0_0_6px_rgba(255,255,255,0.35)]">fame</span>
+          <span className="-mt-2 text-4xl sm:text-[46px] font-extrabold tracking-tight bg-gradient-to-r from-cyan-300 via-pink-400 to-fuchsia-600 text-transparent bg-clip-text drop-shadow-[0_0_6px_rgba(255,0,180,0.55)]">tonic</span>
+        </a>
+
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-10 text-sm font-medium">
+          <a href="#about" className="hover:underline inline-block">About us</a>
+          <a href="#contact" className="hover:underline inline-block">Contact</a>
+        </nav>
+
+        {/* Mobile Menu Icon (static link) */}
+        <a href="#menu" aria-label="Menu" className="md:hidden flex flex-col gap-1.5">
+          <span className="w-8 h-0.5 bg-white" />
+          <span className="w-8 h-0.5 bg-white" />
+          <span className="w-8 h-0.5 bg-white" />
+        </a>
+      </header>
+
+      {/* Hero Section */}
+      <main className="flex-1 w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 pt-10 md:pt-12 pb-14 lg:pb-24 flex flex-col lg:grid lg:grid-cols-2 lg:gap-12 xl:gap-20">
+        {/* Image (mobile top, desktop right) */}
+        <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end mb-10 lg:mb-0">
+          <div className="relative max-w-[460px] w-full">
+            {/* Glow ring background approximation */}
+            <div className="absolute -top-10 -left-6 right-0 mx-auto w-[140%] aspect-square rounded-full blur-3xl opacity-40 bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-blue-600 pointer-events-none select-none" />
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/influe.png"
+              alt="App preview"
+              width={900}
+              height={900}
+              priority
+              className="relative w-full h-auto drop-shadow-[0_0_18px_rgba(0,200,255,0.25)]"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+        </div>
+
+        {/* Text Content */}
+        <div className="order-2 lg:order-1 flex flex-col max-w-[690px]">
+          <h1 className="text-[32px] leading-[1.15] sm:text-[40px] md:text-[44px] font-semibold tracking-tight mb-5 pr-4">
+            Want to Turn Social Media Into a Profitable Career?
+          </h1>
+          <h2 className="text-[30px] sm:text-[38px] md:text-[42px] font-extrabold leading-snug tracking-tight mb-8 bg-gradient-to-r from-cyan-300 via-pink-400 to-fuchsia-600 text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(255,0,180,0.6)]">
+            Discover your way to success with Fametonic:
+          </h2>
+          <ul className="space-y-5 text-[17px] sm:text-[18px] leading-relaxed font-medium mb-10">
+            <li className="flex gap-3"><span className="text-yellow-300 text-xl leading-none">✨</span><span>Start growing your influence right away—no waiting required!</span></li>
+            <li className="flex gap-3"><span className="text-yellow-300 text-xl leading-none">✨</span><span>Create viral TikToks and Reels step by step with easy-to-follow lessons</span></li>
+            <li className="flex gap-3"><span className="text-yellow-300 text-xl leading-none">✨</span><span>Use a Personal AI Worker to boost your content</span></li>
+            <li className="flex gap-3"><span className="text-yellow-300 text-xl leading-none">✨</span><span>Learn from expert-led courses designed for aspiring influencers</span></li>
+          </ul>
+          <div className="w-full">
+            <a
+              href="#get-started"
+              className="relative inline-flex justify-center items-center w-full sm:w-auto text-center font-semibold text-[20px] tracking-wide bg-[#ff0069] text-white px-10 py-4 rounded-md shadow-[0_0_18px_4px_rgba(0,255,247,0.5)]"
+            >
+              GET STARTED <span className="ml-2 text-[22px]" aria-hidden>›</span>
+            </a>
+            <p className="mt-3 text-[11px] sm:text-xs text-center sm:text-left opacity-80">1-minute quiz for personalized Insights</p>
+          </div>
+          <p className="mt-12 text-[11px] sm:text-[12px] leading-relaxed text-center sm:text-left opacity-80 px-2 sm:px-0">
+            By clicking "Get Started", you agree with Terms and Conditions, Privacy Policy, Subscription Terms
+          </p>
+          <p className="mt-6 text-[11px] sm:text-[12px] text-center sm:text-left opacity-70">Fametonic 2025 ©All Rights Reserved.</p>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
