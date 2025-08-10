@@ -26,10 +26,11 @@ export default function Home() {
             <Image
               src="/logo.png"
               alt="Fametonic Logo"
-              width={140}
-              height={60}
               priority
-              className="h-[48px] w-auto sm:h-[60px]"
+              width={100}
+              height={100}
+              className="h-[40px] w-auto sm:h-[56px] md:h-[64px] lg:h-[72px] max-w-[180px] sm:max-w-[220px] md:max-w-[240px] lg:max-w-[200px]"
+              sizes="(max-width: 640px) 180px, (max-width: 768px) 220px, (max-width: 1024px) 240px, 200px"
             />
           </a>
         </div>
@@ -92,10 +93,11 @@ export default function Home() {
             <p className="mt-4 text-[12px] text-center opacity-70">Fametonic 2025 ©All Rights Reserved.</p>
             <br />
           </div>
-          <div className="w-full">
+          {/* Mobile: button and quiz text full width, left-aligned */}
+          <div className="w-full flex flex-col items-start sm:hidden">
             <a
               href="#get-started"
-              className="relative inline-flex justify-center items-center w-full sm:w-auto text-center font-semibold text-[20px] tracking-wide text-white px-10 py-4"
+              className="relative inline-flex justify-center items-center w-full text-center font-semibold text-[20px] tracking-wide text-white px-10 py-4 mt-0"
               style={{
                 background: '#FC004E',
                 boxShadow: '2px 2px 10px #00E7F9',
@@ -104,7 +106,24 @@ export default function Home() {
             >
               GET STARTED <span className="ml-2 text-[22px]" aria-hidden>›</span>
             </a>
-            <p className="mt-3 text-[12px] sm:text-xs text-center sm:text-left">1-minute quiz for personalized Insights</p>
+            <p className="mt-3 text-[12px] text-center w-full">1-minute quiz for personalized Insights</p>
+          </div>
+          {/* Desktop: button and quiz text containerized and centered below button */}
+          <div className="hidden sm:flex flex-col items-start">
+            <div className="w-max">
+              <a
+                href="#get-started"
+                className="relative inline-flex justify-center items-center sm:w-auto text-center font-semibold sm:text-[24px] tracking-wide text-white px-20 py-5 min-w-[340px] mt-12"
+                style={{
+                  background: '#FC004E',
+                  boxShadow: '2px 2px 10px #00E7F9',
+                  borderRadius: '10px'
+                }}
+              >
+                GET STARTED <span className="ml-2 text-[22px]" aria-hidden>›</span>
+              </a>
+              <p className="mt-3 text-xs text-center w-full">1-minute quiz for personalized Insights</p>
+            </div>
           </div>
           {/* Desktop: Show legal and copyright below button */}
           <p className="hidden sm:block mt-12 text-[12px] leading-relaxed text-left opacity-80 px-0">
