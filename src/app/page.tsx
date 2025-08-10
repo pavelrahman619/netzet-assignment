@@ -64,8 +64,14 @@ export default function Home() {
             <h1 className="text-[32px] leading-[1.15] sm:text-[40px] md:text-[44px] font-semibold tracking-tight mb-5 pr-4 text-center sm:text-left">
             Want to Turn Social Media Into a Profitable Career?
             </h1>
-            <h2 className="text-[30px] sm:text-[38px] md:text-[42px] font-extrabold leading-snug tracking-tight mb-8 bg-gradient-to-r from-cyan-300 via-pink-400 to-fuchsia-600 text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(255,0,180,0.6)] text-center sm:text-left">
-            Discover your way to success with Fametonic:
+            <h2
+              className="text-[30px] sm:text-[38px] md:text-[42px] font-extrabold leading-snug tracking-tight mb-8 text-center"
+              style={{
+                color: '#00E7F9',
+                textShadow: '0px 4px 4px #FC004E'
+              }}
+            >
+              Discover your way to success with Fametonic:
             </h2>
           <ul className="space-y-5 text-[17px] sm:text-[18px] leading-relaxed font-medium mb-10">
             <li className="flex gap-3"><span className="text-yellow-300 text-xl leading-none">✨</span><span>Start growing your influence right away—no waiting required!</span></li>
