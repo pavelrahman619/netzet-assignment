@@ -9,17 +9,25 @@ export default function Home() {
       {/* Top Promo Bar */}
       <div className="w-full bg-gradient-to-r from-[#ff0b7b] via-[#ff2f69] to-[#00c4ff] text-white text-center text-[13px] sm:text-sm font-semibold tracking-tight py-3 px-4 leading-snug">
         <span role="img" aria-label="rocket" className="mr-1">🚀</span>
-  <span className="uppercase" style={{ color: '#00E7F9' }}>Fresh Beginnings Sale:</span>
-        <span className="font-normal ml-1">Extra 25% OFF, Limited Spots - start your journey today!</span>
+        <span className="uppercase" style={{ color: '#00E7F9' }}>Fresh Beginnings Sale:</span>
+        <span className="font-normal ml-1">Extra 25% OFF, <br /> Limited Spots - start your journey today!</span>
       </div>
 
       {/* Header & Hero Wrapper */}
-      <header className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 pt-6 lg:pt-10 flex items-center justify-between">
-        {/* Logo (text-based approximation) */}
-        <a href="#" className="flex flex-col leading-none select-none">
-          <span className="text-4xl sm:text-[46px] font-extrabold tracking-tight text-white drop-shadow-[0_0_6px_rgba(255,255,255,0.35)]">fame</span>
-          <span className="-mt-2 text-4xl sm:text-[46px] font-extrabold tracking-tight bg-gradient-to-r from-cyan-300 via-pink-400 to-fuchsia-600 text-transparent bg-clip-text drop-shadow-[0_0_6px_rgba(255,0,180,0.55)]">tonic</span>
-        </a>
+      <header className="w-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 pt-6 lg:pt-10 flex items-center justify-between relative">
+        {/* Centered logo on mobile, left on desktop */}
+        <div className="flex-1 flex justify-center md:justify-start">
+          <a href="#" className="flex items-center select-none" aria-label="Home">
+            <Image
+              src="/logo.png"
+              alt="Fametonic Logo"
+              width={140}
+              height={60}
+              priority
+              className="h-[48px] w-auto sm:h-[60px]"
+            />
+          </a>
+        </div>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-10 text-sm font-medium">
