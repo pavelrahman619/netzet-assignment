@@ -73,25 +73,39 @@ export default function Home() {
             >
               Discover your way to success with Fametonic:
             </h2>
-          <ul className="space-y-5 text-[17px] sm:text-[18px] leading-relaxed font-medium mb-10">
+          <ul className="space-y-5 text-[17px] sm:text-[18px] leading-relaxed font-medium">
             <li className="flex gap-3"><span className="text-yellow-300 text-xl leading-none">✨</span><span>Start growing your influence right away—no waiting required!</span></li>
             <li className="flex gap-3"><span className="text-yellow-300 text-xl leading-none">✨</span><span>Create viral TikToks and Reels step by step with easy-to-follow lessons</span></li>
             <li className="flex gap-3"><span className="text-yellow-300 text-xl leading-none">✨</span><span>Use a Personal AI Worker to boost your content</span></li>
             <li className="flex gap-3"><span className="text-yellow-300 text-xl leading-none">✨</span><span>Learn from expert-led courses designed for aspiring influencers</span></li>
           </ul>
+          {/* Mobile: Show legal and copyright above button */}
+          <div className="block sm:hidden">
+            <p className="mt-8 text-[12px] leading-relaxed text-center opacity-80 px-10">
+              By clicking "Get Started", you agree with Terms and <br /> Conditions, Privacy Policy, Subscription Terms
+            </p>
+            <p className="mt-4 text-[12px] text-center opacity-70">Fametonic 2025 ©All Rights Reserved.</p>
+            <br />
+          </div>
           <div className="w-full">
             <a
               href="#get-started"
-              className="relative inline-flex justify-center items-center w-full sm:w-auto text-center font-semibold text-[20px] tracking-wide bg-[#ff0069] text-white px-10 py-4 rounded-md shadow-[0_0_18px_4px_rgba(0,255,247,0.5)]"
+              className="relative inline-flex justify-center items-center w-full sm:w-auto text-center font-semibold text-[20px] tracking-wide text-white px-10 py-4"
+              style={{
+                background: '#FC004E',
+                boxShadow: '2px 2px 10px #00E7F9',
+                borderRadius: '10px'
+              }}
             >
               GET STARTED <span className="ml-2 text-[22px]" aria-hidden>›</span>
             </a>
-            <p className="mt-3 text-[12px] sm:text-xs text-center sm:text-left opacity-80">1-minute quiz for personalized Insights</p>
+            <p className="mt-3 text-[12px] sm:text-xs text-center sm:text-left">1-minute quiz for personalized Insights</p>
           </div>
-          <p className="mt-12 text-[12px] sm:text-[12px] leading-relaxed text-center sm:text-left opacity-80 px-2 sm:px-0">
+          {/* Desktop: Show legal and copyright below button */}
+          <p className="hidden sm:block mt-12 text-[12px] leading-relaxed text-left opacity-80 px-0">
             By clicking "Get Started", you agree with Terms and Conditions, Privacy Policy, Subscription Terms
           </p>
-          <p className="mt-6 text-[12px] sm:text-[12px] text-center sm:text-left opacity-70">Fametonic 2025 ©All Rights Reserved.</p>
+          <p className="hidden sm:block mt-6 text-[12px] text-left opacity-70">Fametonic 2025 ©All Rights Reserved.</p>
         </div>
       </main>
     </div>
